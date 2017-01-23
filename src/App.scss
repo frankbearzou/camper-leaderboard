@@ -1,0 +1,52 @@
+$bar-color: #381f0b;
+$background-color: #457e86;
+
+body {
+  background-color: $background-color;
+}
+
+.header {
+  background-color: $bar-color;
+  color: white;
+
+  .logo {
+    width: 250px;
+    margin: 10px 20px;
+  }
+}
+
+.footer {
+  background-color: $bar-color;
+  color: white;
+  margin-top: 20px;
+}
+
+.title {
+  background-color: $bar-color;
+  color: white;
+  margin-top: 20px;
+}
+
+.user-img {
+  width: 40px;
+  border-radius: 5px;
+  max-height: 40px;
+  margin: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #f0f0f0;
+
+  .user-name {
+    color: #337adb;
+  }
+
+  th {
+    height: 50px;
+  }
+}
+
+table, th, td {
+  border: 1px solid #dddddd;
+}

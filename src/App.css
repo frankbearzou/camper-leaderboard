@@ -1,0 +1,38 @@
+body {
+  background-color: #457e86; }
+
+.header {
+  background-color: #381f0b;
+  color: white; }
+  .header .logo {
+    width: 250px;
+    margin: 10px 20px; }
+
+.footer {
+  background-color: #381f0b;
+  color: white;
+  margin-top: 20px; }
+
+.title {
+  background-color: #381f0b;
+  color: white;
+  margin-top: 20px; }
+
+.user-img {
+  width: 40px;
+  border-radius: 5px;
+  max-height: 40px;
+  margin: 5px; }
+
+table {
+  border-collapse: collapse;
+  background-color: #f0f0f0; }
+  table .user-name {
+    color: #337adb; }
+  table th {
+    height: 50px; }
+
+table, th, td {
+  border: 1px solid #dddddd; }
+
+/*# sourceMappingURL=App.css.map */
