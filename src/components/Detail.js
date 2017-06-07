@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Title = (props) => (
-  <div className="row text-center">
-    <div className="col-md-12 title">
+  <div className="row">
+    <div className="text-center">
       <h3>Leader board</h3>
     </div>
   </div>
@@ -72,16 +72,16 @@ class Detail extends React.Component {
         return (
           <tr key={i + 1}>
 
-            <td className="col-md-1">{i + 1}</td>
-            <td className="col-md-5">
+            <td className="">{i + 1}</td>
+            <td className="">
               <a href={`https://www.freecodecamp.com/${user.username}`} target="_blank">
                 <img src={user.img} className="user-img" alt="user-img"/>
                 <span className="user-name">{user.username}</span>
               </a>
 
             </td>
-            <td className="col-md-3 text-center">{user.recent}</td>
-            <td className="col-md-3 text-center">{user.alltime}</td>
+            <td className=" text-center">{user.recent}</td>
+            <td className=" text-center">{user.alltime}</td>
           </tr>
         );
       })}
@@ -90,21 +90,24 @@ class Detail extends React.Component {
 
     return (
       <div className="container">
-        <Title/>
-        <div className="row">
-          <table className="col-md-12">
-            <thead>
-            <tr>
-              <th className="col-md-1">#</th>
-              <th className="col-md-5">Camper Name</th>
-              <th id="recent" className="col-md-3 text-center"><a onClick={this.loadRecentData}>Points in past 30 days{this.state.data_type === 'recent' ? " ▼" : ''}</a></th>
-              <th id="alltime" className="col-md-3 text-center"><a onClick={this.loadAllData}>All time points{this.state.data_type === 'all' ? " ▼" : ''}</a></th>
+        <div className="col-md-12">
+          <Title/>
+          <div className="table-responsive">
+            <table className="table">
+              <thead>
+              <tr>
+                <th className="">#</th>
+                <th className="">Camper Name</th>
+                <th id="recent" className=" text-center"><a onClick={this.loadRecentData}>Points in past 30 days{this.state.data_type === 'recent' ? " ▼" : ''}</a></th>
+                <th id="alltime" className=" text-center"><a onClick={this.loadAllData}>All time points{this.state.data_type === 'all' ? " ▼" : ''}</a></th>
 
-            </tr>
-            </thead>
-            {tbody}
-          </table>
+              </tr>
+              </thead>
+              {tbody}
+            </table>
+          </div>
         </div>
+
       </div>
     );
   }
