@@ -1,7 +1,7 @@
 # Camper Leaderboard
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Checking the live demo [here](https://frankbearzou.github.io/camper-leaderboard/)
+Checking the [live demo](https://frankbearzou.github.io/camper-leaderboard/)
 
 ## User Stories
 - I can see a table of the Free Code Camp campers who've earned the most brownie points in the past 30 days.
